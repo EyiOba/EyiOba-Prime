@@ -1,0 +1,182 @@
+:root {
+  --primary: #D4AF37; /* Gold */
+  --secondary: #228B22; /* Green */
+  --neutral: #FFFDD0; /* Cream */
+}
+
+/* Hero Section */
+
+  .hero-section {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+      min-height: 100vh;
+  width: 100%;
+}
+/* Improve text readability on hero image */
+.hero-text {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Gold button hover effect */
+.btn-warning:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+/* Product Cards */
+.card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+    .pricing {
+  font-weight: 700;
+  color: var(--primary);
+}
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Benefits List */
+.benefits-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.benefits-list li::before {
+  content: "✔";
+  color: var(--secondary);
+  margin-right: 8px;
+}
+
+/* EDIT: Mobile responsiveness */
+  @media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem !important;
+  }
+  .hero-text .lead {
+    font-size: 1rem;
+  }
+}
+  }
+/* Add to your CSS */
+.hover-shadow {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.btn-outline-warning:hover {
+  background-color: #D4AF37;
+  color: white;
+}
+/* Engagement Page Specific Styles */
+.engagement-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), url('../images/engagement-hero.jpg') center/cover no-repeat;
+  height: 70vh;
+}
+
+/* Benefit List Styling */
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+.benefits-list li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 30px;
+}
+.benefits-list li:before {
+  content: "✓";
+  color: #228B22;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .engagement-hero {
+    height: 50vh;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+/* Products Page Specific Styles */
+.products-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), url('../images/products-hero.jpg') center/cover no-repeat;
+  height: 60vh;
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .products-hero {
+    height: 50vh;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+}
+/* Gallery Page Specific Styles */
+.gallery-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), url('../images/gallery-hero.jpg') center/cover no-repeat;
+  height: 60vh;
+}
+
+.gallery-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid a:hover {
+  transform: scale(0.98);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.gallery-grid a:hover img {
+  opacity: 0.9;
+}
+
+/* Lightbox Overrides */
+.lightbox .lb-image {
+  border: 10px solid white;
+  border-radius: 3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 50vh;
+  }
+  .gallery-grid img {
+    height: 180px;
+  }
+}
